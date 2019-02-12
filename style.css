@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    background: #5c626d;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+#RockPaperScissor {
+    height: auto;
+    width: 600px;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#scores {
+    display: flex;
+    border: 2px solid white;
+    width: 200px;
+    height: 100px;
+    justify-content: center;
+    color: white;
+}
+
+#computer {
+    align-self: center;
+    font-size: 50px;
+}
+
+#computer .type {
+    text-align: left;
+    margin-right: 15px;
+}
+
+#computer .score {
+    text-align: right;
+    display: inline-block;
+    width: calc(100% - 33px);
+}
+
+#player .type {
+    text-align: right;
+}
+
+.type {
+    font-size: 16px;
+    display: block;
+}
+
+#computer:after {
+    content: ':';
+}
+
+#player {
+    align-self: center;
+    font-size: 50px;
+}
+
+#playbuttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.gobutton {
+    background: transparent;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    text-decoration: none;
+    transition: all ease-in 300ms;
+}
+
+.gobutton:after {
+    display: flex;
+    align-self: center;
+}
+
+.gobutton:hover {
+    background: white;
+    color: black;
+    transition: all ease-out 300ms;
+}
+
+#rock:after {
+    content: 'Rock';
+}
+
+#paper:after {
+    content: 'Paper';
+}
+
+#scissor:after {
+    content: 'Scissor';
+}
+
+#conditionwrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 600px;
+    margin-top: 50px;
+}
+
+#playercondition,
+#computercondition,
+#winnercondition {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
